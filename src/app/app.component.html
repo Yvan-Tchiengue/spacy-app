@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Spacy App</h2>
+
+
+  <label for="fname">Enter your text:</label><br>
+  <textarea #text required="a text must be entered" name="fname" rows="10" cols="100" maxlength="1000" >
+  </textarea><br>
+<label for="fname">write the language</label><br>
+<textarea #language required="a language must be entered" id="fname" name="fname">
+  </textarea> <br>
+<button type="submit" (click)="senRequest(text.value, language.value)" >submit</button>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "spacy.frag.jetzt".</p>
+<div>
+  <ul  *ngFor="let text of responsedata">
+    <ol>
+      {{text.text}}.........>{{text.tag}}
+    </ol>
+  </ul>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

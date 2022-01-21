@@ -1,0 +1,10 @@
+{
+  "/frag": {
+    "target": "https://spacy.frag.jetzt/dep",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/frag": ""
+    }
+  }
+}
